@@ -4,13 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-<<<<<<< HEAD
     "start": "cross-env NODE_ENV=production node -r dotenv/config --es-module-specifier-resolution=node ./bin/server.js",
     "start:dev": "cross-env NODE_ENV=development nodemon -r dotenv/config --es-module-specifier-resolution=node ./bin/server.js",
-=======
-    "start": "cross-env NODE_ENV=production node --es-module-specifier-resolution=node ./bin/server.js",
-    "start:dev": "cross-env NODE_ENV=development nodemon --es-module-specifier-resolution=node ./bin/server.js",
->>>>>>> 93d39e48fa09706360a3459f1f8bcec86a8318c4
     "lint": "eslint **/*.js",
     "lint:fix": "eslint --fix **/*.js"
   },
@@ -20,10 +15,7 @@
     "dotenv": "^14.3.2",
     "express": "4.17.1",
     "joi": "^17.5.0",
-<<<<<<< HEAD
     "mongoose": "^6.1.8",
-=======
->>>>>>> 93d39e48fa09706360a3459f1f8bcec86a8318c4
     "morgan": "1.10.0"
   },
   "devDependencies": {
