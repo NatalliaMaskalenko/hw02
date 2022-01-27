@@ -2,7 +2,10 @@ import express from 'express';
 import logger from 'morgan';
 import cors from 'cors';
 
+<<<<<<< HEAD
 import { HttpCode } from './lib/constants';
+=======
+>>>>>>> 93d39e48fa09706360a3459f1f8bcec86a8318c4
 import contactsRouter from './routes/api/contacts';
 
 const app = express()
