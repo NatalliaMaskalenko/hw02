@@ -9,12 +9,13 @@ class AuthService {
   };
 
   async create(body) {
-    const { id, name, email, role } = await Users.create(body)
+    const { id, name, email, role, avatar } = await Users.create(body)
     return {
       id,
       name,
       email,
       role,
+      avatar,
     };
   };
 
@@ -28,8 +29,8 @@ class AuthService {
   };
 
   getToken(user) {
-    const { id, email } = user
-    const payload = { id, email }
+    const { id, email } = user;
+    const payload = { id, email };
     const token = jwt.sign(payload, SECRET_KEY, { expiresIn: '8h' });
     return token;
   }
